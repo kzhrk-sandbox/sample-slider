@@ -1,0 +1,29 @@
+@keyframes animation {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.wrap {
+  width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: 600%;
+  animation-name: animation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item {
+  width: 320px;
+  background-color: #ccc;
+}
+
